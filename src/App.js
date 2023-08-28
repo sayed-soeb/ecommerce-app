@@ -15,11 +15,11 @@ const App = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/products" exact element={<Products />} />
-        <Route path="/add-product" exact element={<AddProduct />} />
-        <Route path="/cart" exact element={<Cart />} />
-        <Route path="/" exact element={<Products />} />
-        <Route path="/search-results" exact element={<SearchResult />} />
+        <Route exact path="/products"  element={<Products />} />
+        <Route exact path="/add-product"  element={<AddProduct />} />
+        <Route exact path="/cart"  element={<Cart />} />
+        <Route exact path="/"  element={<Products />} />
+        <Route exact path="/search-results"  element={<SearchResult />} />
       </Routes>
     <ToastContainer />
     </div>
