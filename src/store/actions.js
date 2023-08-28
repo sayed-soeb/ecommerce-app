@@ -22,7 +22,7 @@ export const fetchProductsSuccess = (products) => {
 export const fetchProducts = () => {
   return (dispatch) => {
     axios
-      .get('https://my-json-server.typicode.com/sayed-soeb/ecommerce/db')
+      .get('https://my-json-server.typicode.com/sayed-soeb/ecommerce-app/db')
       .then((response) => {
         dispatch(fetchProductsSuccess(response.data.products));
       })
