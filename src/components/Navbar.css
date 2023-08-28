@@ -1,0 +1,82 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #f39c12;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.navbar-search input[type="text"] {
+  border: none;
+  padding: 5px;
+  width: 200px;
+  outline: none;
+}
+
+.navbar-search button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-search button:hover {
+  background-color: #e67e22;
+}
+
+.add-product-link {
+  color: #fff; /* Set the link color to white */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.add-product-link:hover {
+  color: #f39c12; /* Change the color on hover to match the rest of the Navbar */
+}
