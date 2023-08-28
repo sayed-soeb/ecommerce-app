@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'; // Import the stylesheet
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Products from './components/Products'; // Import Products component
 import SearchResult from './components/SearchResults';
@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   return (
     <div>
-    <Router>
       <Navbar />
       <Routes>
         <Route path="/products" exact element={<Products />} />
@@ -22,7 +21,6 @@ const App = () => {
         <Route path="/" exact element={<Products />} />
         <Route path="/search-results" exact element={<SearchResult />} />
       </Routes>
-    </Router>
     <ToastContainer />
     </div>
   );
