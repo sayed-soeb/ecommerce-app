@@ -16,11 +16,11 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/products" element={<Products />} /> {/* Associate Products component */}
-        <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/products" exact element={<Products />} />
+        <Route path="/add-product" exact element={<AddProduct />} />
+        <Route path="/cart" exact element={<Cart />} />
         <Route path="/" exact element={<Products />} />
-        <Route path="/search-results" element={<SearchResult />} />
+        <Route path="/search-results" exact element={<SearchResult />} />
       </Routes>
     </Router>
     <ToastContainer />
